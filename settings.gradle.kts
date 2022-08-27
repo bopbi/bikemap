@@ -28,3 +28,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "BikeMap"
 include(":app")
+include(":feature:map")

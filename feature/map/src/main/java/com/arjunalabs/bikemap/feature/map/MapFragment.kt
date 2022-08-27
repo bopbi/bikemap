@@ -1,11 +1,11 @@
-package com.arjunalabs.bikemap
+package com.arjunalabs.bikemap.feature.map
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.arjunalabs.bikemap.databinding.FragmentMapBinding
+import com.arjunalabs.bikemap.feature.map.databinding.FragmentMapBinding
 import com.mapbox.maps.Style
 import com.zhuinden.simplestackextensions.fragments.DefaultFragmentKey
 import com.zhuinden.simplestackextensions.fragments.KeyedFragment

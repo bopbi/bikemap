@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
 }
@@ -8,19 +8,20 @@ android {
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "com.arjunalabs.bikemap"
         minSdk = 23
         targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -37,11 +38,12 @@ android {
 
 dependencies {
 
-    implementation(project(":feature:map"))
-
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.appcompat:appcompat:1.5.0")
     implementation("com.google.android.material:material:1.6.1")
+    testImplementation("junit:junit:4.13.2")
+
+    implementation("com.mapbox.maps:android:10.7.0")
 
     implementation("com.github.Zhuinden:simple-stack:2.6.4")
     implementation("com.github.Zhuinden.simple-stack-extensions:core-ktx:2.2.4")
@@ -51,7 +53,6 @@ dependencies {
     implementation("com.github.Zhuinden.simple-stack-extensions:services:2.2.4")
     implementation("com.github.Zhuinden.simple-stack-extensions:services-ktx:2.2.4")
 
-    testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 }
