@@ -53,6 +53,8 @@ dependencies {
     implementation("com.github.Zhuinden.simple-stack-extensions:services:2.2.4")
     implementation("com.github.Zhuinden.simple-stack-extensions:services-ktx:2.2.4")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 }
