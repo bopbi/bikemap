@@ -38,6 +38,8 @@ android {
 dependencies {
 
     implementation(project(":feature:map"))
+    implementation(project(":feature:home"))
+    implementation(project(":utility:navigation"))
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.appcompat:appcompat:1.5.0")
@@ -50,6 +52,8 @@ dependencies {
     implementation("com.github.Zhuinden.simple-stack-extensions:navigator-ktx:2.2.4")
     implementation("com.github.Zhuinden.simple-stack-extensions:services:2.2.4")
     implementation("com.github.Zhuinden.simple-stack-extensions:services-ktx:2.2.4")
+
+    implementation("com.jakewharton.timber:timber:5.0.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

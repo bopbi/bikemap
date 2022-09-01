@@ -29,3 +29,5 @@ dependencyResolutionManagement {
 rootProject.name = "BikeMap"
 include(":app")
 include(":feature:map")
+include(":feature:home")
+include(":utility:navigation")
