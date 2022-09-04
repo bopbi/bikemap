@@ -39,6 +39,7 @@ android {
 dependencies {
 
     implementation(project(":utility:navigation"))
+    implementation(project(":utility:service"))
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.appcompat:appcompat:1.5.0")
