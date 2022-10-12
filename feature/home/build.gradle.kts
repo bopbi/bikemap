@@ -34,6 +34,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    namespace = "com.arjunalabs.bikemap.feature.home"
 }
 
 dependencies {
