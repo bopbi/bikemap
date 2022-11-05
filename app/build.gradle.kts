@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.arjunalabs.bikemap"
         minSdk = 24
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -44,18 +44,10 @@ dependencies {
     implementation(project(":utility:navigation"))
     implementation(project(":utility:service"))
 
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.appcompat:appcompat:1.5.0")
-    implementation("com.google.android.material:material:1.6.1")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.5.1")
 
-    implementation("com.github.Zhuinden:simple-stack:2.6.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:core-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:fragments:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:fragments-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:navigator-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:services:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:services-ktx:2.2.4")
-
+    implementation(libs.bundles.simplestack)
     implementation("com.jakewharton.timber:timber:5.0.1")
 
     testImplementation("junit:junit:4.13.2")

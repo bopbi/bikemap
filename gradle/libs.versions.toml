@@ -1,0 +1,33 @@
+[versions]
+kotlin = "1.7.10"
+sqldelight = "1.5.3"
+android-plugin = "7.3.1"
+simple-stack = "2.6.4"
+simple-stack-ext = "2.2.4"
+
+[libraries]
+simplestack = { module = "com.github.Zhuinden:simple-stack", version.ref = "simple-stack" }
+simplestack-ext-core-ktx = { module = "com.github.Zhuinden.simple-stack-extensions:core-ktx", version.ref = "simple-stack-ext" }
+simplestack-ext-fragments = { module = "com.github.Zhuinden.simple-stack-extensions:fragments", version.ref = "simple-stack-ext" }
+simplestack-ext-fragments-ktx = { module = "com.github.Zhuinden.simple-stack-extensions:fragments-ktx", version.ref = "simple-stack-ext" }
+simplestack-ext-navigator-ktx = { module = "com.github.Zhuinden.simple-stack-extensions:navigator-ktx", version.ref = "simple-stack-ext" }
+simplestack-ext-services = { module = "com.github.Zhuinden.simple-stack-extensions:services", version.ref = "simple-stack-ext" }
+simplestack-ext-services-ktx = { module = "com.github.Zhuinden.simple-stack-extensions:services-ktx", version.ref = "simple-stack-ext" }
+
+[bundles]
+simplestack = [
+    "simplestack",
+    "simplestack.ext.core.ktx",
+    "simplestack.ext.fragments",
+    "simplestack.ext.fragments.ktx",
+    "simplestack.ext.navigator.ktx",
+    "simplestack.ext.services",
+    "simplestack.ext.fragments.ktx",
+    "simplestack.ext.services.ktx"
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+sqldelight = { id = "com.squareup.sqldelight", version.ref = "sqldelight" }

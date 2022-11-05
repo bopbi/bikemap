@@ -41,22 +41,15 @@ dependencies {
 
     implementation(project(":utility:navigation"))
 
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.appcompat:appcompat:1.5.0")
-    implementation("com.google.android.material:material:1.6.1")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("com.google.android.material:material:1.7.0")
     testImplementation("junit:junit:4.13.2")
 
     implementation("com.mapbox.maps:android:10.7.0")
 
-    implementation("com.github.Zhuinden:simple-stack:2.6.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:core-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:fragments:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:fragments-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:navigator-ktx:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:services:2.2.4")
-    implementation("com.github.Zhuinden.simple-stack-extensions:services-ktx:2.2.4")
-
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+    implementation(libs.bundles.simplestack)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
 
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
